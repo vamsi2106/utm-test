@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Ridhira Zen</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no" />
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="js/owl-carousel/owl.carousel.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <link href="css/all.css" rel="stylesheet">
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10827451052"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-10827451052');
+   </script>
+   <!-- Google Tag Manager -->
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5VSTDTCW');
+   </script>
+   <!-- End Google Tag Manager -->
+   <script type="text/javascript">
+      var validations = {
+         email: [/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/, 'Please enter a valid email address']
+      };
+      $(document).ready(function () {
+         // Check all the input fields of type email. This function will handle all the email addresses validations
+         $("input[type=email]").change(function () {
+            // Set the regular expression to validate the email 
+            validation = new RegExp(validations['email'][0]);
+            // validate the email value against the regular expression
+            if (!validation.test(this.value)) {
+               // If the validation fails then we show the custom error message
+               this.setCustomValidity(validations['email'][1]);
+               return false;
+            } else {
+               // This is really important. If the validation is successful you need to reset the custom error message
+               this.setCustomValidity('');
+            }
+         });
+
+         function testInput(event) {
+            var value = String.fromCharCode(event.which);
+            var pattern = new RegExp(/[A-Z@~`!@#$%^&*()_=+\\\\';:\"\\/?>.<,-]/i);
+            return pattern.test(value);
+         }
+
+      })
+   </script>
+</head>
+
+<body>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VSTDTCW" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+   <div class="brochure">
+      <a href="#form" class="m-hide">
+         <span>Brochure</span>
+      </a>
+      <a href="#form" class="m-visible">
+         <span>Enquire Now</span><br>
+         <span><i class="fa fa-phone" aria-hidden="true"></i> +91 9121211888</span>
+      </a>
+   </div>
+   <!-- <a class="whatsapp-btn" target="_blank" href="https://wa.me/919121211888?text=Rudhira"><img src="images/whatsapp-icon.png.webp">
+         </a> -->
+   <header>
+      <div class="header">
+         <div class="container">
+            <div class="logo" data-aos="fade-in">
+               <a href="index.html"><img class="img-responsive" alt="" src="images/logo.png"></a>
+            </div>
+            <nav class="navbar navbar-inverse " role="navigation">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                     data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+               </div>
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                     <li><a href="#location">Location</a></li>
+                     <li><a href="#resort">5-Star Resort</a></li>
+                     <li><a href="#villas">Villas</a></li>
+                     <li><a href="#plots">Plots</a></li>
+                     <li class="text-center"><span class="number"><i class="fa fa-phone" aria-hidden="true"></i>
+                           +91 9121211888</span>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <div class="banner" data-aos="fade-in">
+         <img class="m-hide" alt="" src="images/home-banner.jpg">
+         <img class="m-visible" src="images/home-banner-m.jpg">
+         <div class="container">
+            <div class="text" data-aos="fade-up">
+               <h1><span>Not Just Any</span>REAL ESTATE</h1>
+               <p>A Property That Pays You<br>
+                  Back—In Wellness & Returns
+               </p>
+               <div class="form-btn"><a href="#form">Enquire Now</a></div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="home-content">
+      <div class="main-block-row intro-text m-t-none" data-aos="fade-up">
+         <div class="container">
+            <div class="col-md-8 m-auto">
+               <h2>Ridhira Zen: Where Wellness Meets Investment</h2>
+               <p>Ridhira Zen offers more than just real estate. It’s a wellness-oriented,
+                  luxury investment that provides up to 6% rental yield and a lifestyle focused on health and
+                  relaxation. Your property is managed by a 5-star resort, offering high returns with low effort.
+               </p>
+            </div>
+            <h4>Here’s what sets Ridhira Zen apart:</h4>
+            <div class="col-md-9 m-auto pic">
+               <img class="img-responsive m-hide" src="images/intro-pic.jpg">
+               <img class="img-responsive m-visible" src="images/intro-pic-m.jpg">
+            </div>
+         </div>
+      </div>
+      <div class="main-block-row video" data-aos="fade-up" id="form">
+         <div class="container">
+            <div class="col-md-8 m-auto form">
+               <h2>Get in touch with us</h2>
+               <div class="form-code">
+                  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
+                     style='background-color: white;color: black;max-width: 600px;'>
+                     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                     <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+                     <form id='webform5924956000067228001' action='https://crm.zoho.com/crm/WebToLeadForm'
+                        name=WebToLeads5924956000067228001 method='POST'
+                        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5924956000067228001()'
+                        accept-charset='UTF-8'>
+                        <input type='text' style='display:none;' name='xnQsjsdp'
+                           value='b8cc9d1fc459e2ab20bc26575d3aa6dc4f1c54ebfbd9334d14953a5fa5be6eee'></input>
+                        <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                        <input type='text' style='display:none;' name='xmIwtLD'
+                           value='9e5d0f12cbd4746f44c34fa7762f861c800a6202f61f29b61933b261ca54ed705a14089067666d05f69222a5f2428e96'></input>
+                        <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                        <input type='text' style='display:none;' name='returnURL'
+                           value='https&#x3a;&#x2f;&#x2f;ridhirazen.com&#x2f;campaigns&#x2f;resort-plots-and-villas-in-shankarpally&#x2f;thank-you'>
+                        </input>
+                        <!-- Do not remove this code. -->
+                        <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+                        <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Last_Name'>Name<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='text' id='Last_Name' aria-required='true' aria-label='Last Name'
+                                 name='Last Name' aria-valuemax='80' maxlength='80' required></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Phone'>Phone<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='text' id='Phone' aria-required='true' aria-label='Phone' name='Phone'
+                                 aria-valuemax='30' pattern=".{10,15}" minlength="5" required></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Email'>Email<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='email' ftype='email' autocomplete='false' id='Email' aria-required='true'
+                                 aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxlength='100'
+                                 required></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF6'>Product<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF6' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='true' aria-label='LEADCF6' name='LEADCF6' required>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='Villa'>Villa</option>
+                                 <option value='Plot'>Plot</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF7'>Profession</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF7' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='false' aria-label='LEADCF7' name='LEADCF7'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='Business'>Business</option>
+                                 <option value='Job'>Job</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Lead_Source'>Lead Source</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='Lead_Source'
+                                 onChange='addAriaSelected5924956000067228001()' aria-required='false'
+                                 aria-label='Lead Source' name='Lead Source'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='CC'>CC</option>
+                                 <option value='channel_partner'>channel_partner</option>
+                                 <option value='database'>database</option>
+                                 <option value='email_campaign'>email_campaign</option>
+                                 <option value='externalevents'>externalevents</option>
+                                 <option value='hospital'>hospital</option>
+                                 <option value='incoming'>incoming</option>
+                                 <option value='Investor&#x20;Data&#x20;-&#x20;Subham'>Investor Data - Subham</option>
+                                 <option value='IVR'>IVR</option>
+                                 <option value='kiosk'>kiosk</option>
+                                 <option value='odespa'>odespa</option>
+                                 <option value='Odespa&#x20;Database'>Odespa Database</option>
+                                 <option value='offline_advertising'>offline_advertising</option>
+                                 <option selected value='online_advertising'>online_advertising</option>
+                                 <option value='property_portals'>property_portals</option>
+                                 <option value='referral'>referral</option>
+                                 <option value='remarketing'>remarketing</option>
+                                 <option value='retreat'>retreat</option>
+                                 <option value='sms_campaign'>sms_campaign</option>
+                                 <option value='social_media'>social_media</option>
+                                 <option value='walkin'>walkin</option>
+                                 <option value='website'>website</option>
+                                 <option value='WebSite&#x20;Visit'>WebSite Visit</option>
+                                 <option value='whatsapp'>whatsapp</option>
+                                 <option value='WhatsApp&#x20;-&#x20;Ridhira&#x20;Living'>WhatsApp - Ridhira Living
+                                 </option>
+                                 <option value='whatsapp_campaign'>whatsapp_campaign</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF5'>subsource</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF5' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='false' aria-label='LEADCF5' name='LEADCF5'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='7&#x20;Hills&#x20;Powered&#x20;Welfare&#x20;Society'>7 Hills Powered
+                                    Welfare Society</option>
+                                 <option value='99acres'>99acres</option>
+                                 <option value='Adil&#x20;Reference'>Adil Reference</option>
+                                 <option value='Adonmo'>Adonmo</option>
+                                 <option value='Ahmadabad&#x20;-&#x20;Novotel'>Ahmadabad - Novotel</option>
+                                 <option value='Ahmedabad&#x20;-&#x20;Club&#x20;O7'>Ahmedabad - Club O7</option>
+                                 <option value='Ahmedabad&#x20;-&#x20;DoubleTree&#x20;by&#x20;Hilton'>Ahmedabad -
+                                    DoubleTree by Hilton</option>
+                                 <option value='Ahmedabad&#x20;-&#x20;Marriot'>Ahmedabad - Marriot</option>
+                                 <option value='AIG'>AIG</option>
+                                 <option value='Aparna&#x20;Cyber&#x20;Zone'>Aparna Cyber Zone</option>
+                                 <option value='Aparna&#x20;Hill&#x20;Park&#x20;Avenue'>Aparna Hill Park Avenue</option>
+                                 <option value='Aparna&#x20;Sarovar&#x20;Grande'>Aparna Sarovar Grande</option>
+                                 <option value='ASHOK&#x20;RAJU&#x20;SIR'>ASHOK RAJU SIR</option>
+                                 <option value='Bangalore&#x20;-&#x20;Adarsh&#x20;Nagar'>Bangalore - Adarsh Nagar
+                                 </option>
+                                 <option value='Bangalore&#x20;-&#x20;Radisson&#x20;Blu&#x20;Atria'>Bangalore - Radisson
+                                    Blu Atria</option>
+                                 <option value='Bangalore&#x20;Banashankari'>Bangalore Banashankari</option>
+                                 <option value='Bangalore&#x20;La&#x20;Marvella&#x20;hotel'>Bangalore La Marvella hotel
+                                 </option>
+                                 <option value='Banglalore&#x20;-&#x20;Jayanagar'>Banglalore - Jayanagar</option>
+                                 <option value='Builders&#x20;Lead'>Builders Lead</option>
+                                 <option value='chandan'>chandan</option>
+                                 <option value='channel_partner'>channel_partner</option>
+                                 <option value='chatbot'>chatbot</option>
+                                 <option value='Chennai&#x20;-&#x20;Courtyard&#x20;Marriot'>Chennai - Courtyard Marriot
+                                 </option>
+                                 <option value='Chennai&#x20;-&#x20;Forum&#x20;Vijaya&#x20;Mall'>Chennai - Forum Vijaya
+                                    Mall</option>
+                                 <option value='Chennai&#x20;Express&#x20;Avenue'>Chennai Express Avenue</option>
+                                 <option value='Cochin&#x20;Domestic&#x20;Airport'>Cochin Domestic Airport</option>
+                                 <option value='Cochin&#x20;Int&#x20;Airport'>Cochin Int Airport</option>
+                                 <option value='customer'>customer</option>
+                                 <option value='customer&#x20;anoop&#x20;khandelia'>customer anoop khandelia</option>
+                                 <option value='customer_referral'>customer_referral</option>
+                                 <option value='Delhi&#x20;Airport&#x20;-&#x20;Lemon&#x20;Tree&#x20;Premium'>Delhi
+                                    Airport - Lemon Tree Premium</option>
+                                 <option value='Direct&#x20;Site&#x20;Visit'>Direct Site Visit</option>
+                                 <option value='Dr&#x20;Shashank'>Dr Shashank</option>
+                                 <option value='facebook'>facebook</option>
+                                 <option value='facebook_ads'>facebook_ads</option>
+                                 <option value='FB&#x20;Event&#x20;Ad'>FB Event Ad</option>
+                                 <option value='Gold&#x20;Offer'>Gold Offer</option>
+                                 <option value='google'>google</option>
+                                 <option selected value='google_ads'>google_ads</option>
+                                 <option value='gvk'>gvk</option>
+                                 <option value='Hitec-city&#x20;Event&#x20;Dec&#x20;21&#x20;2024'>Hitec-city Event Dec
+                                    21 2024</option>
+                                 <option value='Hitech&#x20;Expo&#x20;Nov'>Hitech Expo Nov</option>
+                                 <option value='home&#x20;hunt'>home hunt</option>
+                                 <option value='Hotel&#x20;Royal&#x20;Orchid'>Hotel Royal Orchid</option>
+                                 <option value='housing'>housing</option>
+                                 <option value='Hyd&#x20;-&#x20;GVK&#x20;One&#x20;Mall'>Hyd - GVK One Mall</option>
+                                 <option value='Hyd&#x20;-&#x20;Hyderabad&#x20;Grand&#x20;Hotel'>Hyd - Hyderabad Grand
+                                    Hotel</option>
+                                 <option value='Hyd&#x20;-&#x20;Jubilee&#x20;Hills'>Hyd - Jubilee Hills</option>
+                                 <option value='Hyd&#x20;-&#x20;Novotel&#x20;HICC'>Hyd - Novotel HICC</option>
+                                 <option value='Hyd&#x20;-&#x20;Ramada&#x20;Manohar'>Hyd - Ramada Manohar</option>
+                                 <option value='Hyd&#x20;-&#x20;RGIA'>Hyd - RGIA</option>
+                                 <option value='Hyd&#x20;-&#x20;Svm&#x20;Grand&#x20;Nagole'>Hyd - Svm Grand Nagole
+                                 </option>
+                                 <option value='Hyd&#x20;-&#x20;Taj&#x20;Vivanta'>Hyd - Taj Vivanta</option>
+                                 <option value='Hyd-Radisson'>Hyd-Radisson</option>
+                                 <option value='Instagram'>Instagram</option>
+                                 <option value='Jaipur&#x20;Airport'>Jaipur Airport</option>
+                                 <option value='Jan2022'>Jan2022</option>
+                                 <option value='Karimnagar&#x20;event&#x20;30&#x20;Nov&#x20;2024'>Karimnagar event 30
+                                    Nov 2024</option>
+                                 <option value='Karthik&#x20;Bezawada'>Karthik Bezawada</option>
+                                 <option value='Kodaikanal&#x20;le&#x20;poshe'>Kodaikanal le poshe</option>
+                                 <option value='LinkedIn'>LinkedIn</option>
+                                 <option value='Lucknow&#x20;Airport'>Lucknow Airport</option>
+                                 <option value='Lucknow&#x20;Domestic&#x20;Airport'>Lucknow Domestic Airport</option>
+                                 <option value='magicbricks'>magicbricks</option>
+                                 <option value='Meydan&#x20;Expo'>Meydan Expo</option>
+                                 <option value='missed'>missed</option>
+                                 <option value='Mohan'>Mohan</option>
+                                 <option value='Mumbai&#x20;-&#x20;Courtyard&#x20;Marriott'>Mumbai - Courtyard Marriott
+                                 </option>
+                                 <option value='Mumbai&#x20;-&#x20;International&#x20;airport'>Mumbai - International
+                                    airport</option>
+                                 <option value='Mumbai&#x20;Lemon&#x20;Tree'>Mumbai Lemon Tree</option>
+                                 <option value='Mumbai&#x20;Niranta&#x20;hotel'>Mumbai Niranta hotel</option>
+                                 <option value='My&#x20;Home&#x20;Jewel'>My Home Jewel</option>
+                                 <option value='My&#x20;Home&#x20;Mangala'>My Home Mangala</option>
+                                 <option value='My&#x20;Home&#x20;Tarkshya&#x20;Dec&#x20;14&#x20;2024'>My Home Tarkshya
+                                    Dec 14 2024</option>
+                                 <option value='My&#x20;home&#x20;Vihanga'>My home Vihanga</option>
+                                 <option value='NCC&#x20;Cyber&#x20;Urbania'>NCC Cyber Urbania</option>
+                                 <option value='newspaper'>newspaper</option>
+                                 <option value='odespa'>odespa</option>
+                                 <option value='Odespa&#x20;Data'>Odespa Data</option>
+                                 <option value='organic'>organic</option>
+                                 <option value='Ragul&#x20;Reference'>Ragul Reference</option>
+                                 <option value='Rainbow&#x20;Vistas'>Rainbow Vistas</option>
+                                 <option value='Rajahmundry&#x20;Manjeera&#x20;Sarovar'>Rajahmundry Manjeera Sarovar
+                                 </option>
+                                 <option value='Rajapushpa&#x20;Regalia'>Rajapushpa Regalia</option>
+                                 <option value='Remax'>Remax</option>
+                                 <option value='Ritesh&#x20;Sir'>Ritesh Sir</option>
+                                 <option value='Sakshi&#x20;Property&#x20;Show'>Sakshi Property Show</option>
+                                 <option value='Sarath&#x20;City&#x20;Mall'>Sarath City Mall</option>
+                                 <option value='Siddharth&#x20;Gautham'>Siddharth Gautham</option>
+                                 <option value='Smart&#x20;Works&#x20;2&#x20;Nov&#x20;23'>Smart Works 2 Nov 23</option>
+                                 <option value='Srivalli&#x20;Madam'>Srivalli Madam</option>
+                                 <option value='StarConnect'>StarConnect</option>
+                                 <option value='Subham&#x20;Reference'>Subham Reference</option>
+                                 <option value='Times&#x20;Home&#x20;Hunt&#x20;June&#x20;2024'>Times Home Hunt June 2024
+                                 </option>
+                                 <option value='Times&#x20;invest'>Times invest</option>
+                                 <option value='times_expo_prop_sept_2023'>times_expo_prop_sept_2023</option>
+                                 <option value='TimesOnline'>TimesOnline</option>
+                                 <option value='TOI&#x20;June&#x20;2023'>TOI June 2023</option>
+                                 <option value='Trial&#x20;Database'>Trial Database</option>
+                                 <option value='TV9&#x20;Event'>TV9 Event</option>
+                                 <option value='TV9&#x20;Event-&#x20;April&#x20;2023'>TV9 Event- April 2023</option>
+                                 <option value='twitter'>twitter</option>
+                                 <option value='Udaipur&#x20;-&#x20;Lemon&#x20;Tree'>Udaipur - Lemon Tree</option>
+                                 <option value='Vikram&#x20;Reference'>Vikram Reference</option>
+                                 <option value='website'>website</option>
+                                 <option value='whatsapp'>whatsapp</option>
+                                 <option value='YASHODA'>YASHODA</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF15'>Adset Name</label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='text' id='LEADCF15' aria-required='false' aria-label='LEADCF15'
+                                 name='LEADCF15' aria-valuemax='255' maxlength='255' value='PMax'></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF36'>Agency</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF36' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='false' aria-label='LEADCF36' name='LEADCF36'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='8views'>8views</option>
+                                 <option value='Realatte'>Realatte</option>
+                                 <option value='Digital&#x20;Mojo'>Digital Mojo</option>
+                                 <option value='Inhouse&#x20;Marketing'>Inhouse Marketing</option>
+                                 <option selected value='Arin&#x20;Human'>Arin Human</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Lead_Status'>Lead Status</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='Lead_Status'
+                                 onChange='addAriaSelected5924956000067228001()' aria-required='false'
+                                 aria-label='Lead Status' name='Lead Status'>
+                                 <option value='-None-'>-None-</option>
+                                 <option selected value='New&#x20;Lead'>New Lead</option>
+                                 <option value='Attempting&#x20;to&#x20;Contact'>Attempting to Contact</option>
+                                 <option value='Called'>Called</option>
+                                 <option value='Responded'>Responded</option>
+                                 <option value='Contact&#x20;in&#x20;Future'>Contact in Future</option>
+                                 <option value='Greetings'>Greetings</option>
+                                 <option value='Interested'>Interested</option>
+                                 <option value='Prospect'>Prospect</option>
+                                 <option value='Home&#x20;&#x2f;&#x20;Office&#x20;Visit'>Home &#x2f; Office Visit
+                                 </option>
+                                 <option value='Site&#x20;Visit'>Site Visit</option>
+                                 <option value='Won'>Won</option>
+                                 <option value='Booking&#x20;Done'>Booking Done</option>
+                                 <option value='Qualified'>Qualified</option>
+                                 <option value='Not&#x20;Interested'>Not Interested</option>
+                                 <option value='Lost'>Lost</option>
+                                 <option value='Junk&#x20;Lead'>Junk Lead</option>
+                                 <option value='Not&#x20;Qualified'>Not Qualified</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab'></div>
+                           <div class='zcwf_col_fld'><input type='submit' id='formsubmit' role='button'
+                                 class='formsubmit zcwf_button' value='Submit' aria-label='Submit' title='Submit'><input
+                                 type='reset' class='zcwf_button' role='button' name='reset' value='Reset'
+                                 aria-label='Reset' title='Reset'></div>
+                        </div>
+                        <script>
+                           function addAriaSelected5924956000067228001() {
+                              var optionElem = event.target;
+                              var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+                              if (previousSelectedOption) {
+                                 previousSelectedOption.removeAttribute('aria-selected');
+                              }
+                              optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+                           }
+                           function validateEmail5924956000067228001() {
+                              var form = document.forms['WebToLeads5924956000067228001'];
+                              var emailFld = form.querySelectorAll('[ftype=email]');
+                              var i;
+                              for (i = 0; i < emailFld.length; i++) {
+                                 var emailVal = emailFld[i].value;
+                                 if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                                    var atpos = emailVal.indexOf('@');
+                                    var dotpos = emailVal.lastIndexOf('.');
+                                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                       alert('Please enter a valid email address. ');
+                                       emailFld[i].focus();
+                                       return false;
+                                    }
+                                 }
+                              }
+                              return true;
+                           }
+
+                           function checkMandatory5924956000067228001() {
+                              var mndFileds = new Array('Last Name', 'Email', 'Phone', 'LEADCF6');
+                              var fldLangVal = new Array('Name', 'Email', 'Phone', 'Product');
+                              for (i = 0; i < mndFileds.length; i++) {
+                                 var fieldObj = document.forms['WebToLeads5924956000067228001'][mndFileds[i]];
+                                 if (fieldObj) {
+                                    if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                                       if (fieldObj.type == 'file') {
+                                          alert('Please select a file to upload.');
+                                          fieldObj.focus();
+                                          return false;
+                                       }
+                                       alert(fldLangVal[i] + ' cannot be empty.');
+                                       fieldObj.focus();
+                                       return false;
+                                    } else if (fieldObj.nodeName == 'SELECT') {
+                                       if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                          alert(fldLangVal[i] + ' cannot be none.');
+                                          fieldObj.focus();
+                                          return false;
+                                       }
+                                    } else if (fieldObj.type == 'checkbox') {
+                                       if (fieldObj.checked == false) {
+                                          alert('Please accept  ' + fldLangVal[i]);
+                                          fieldObj.focus();
+                                          return false;
+                                       }
+                                    }
+                                    try {
+                                       if (fieldObj.name == 'Last Name') {
+                                          name = fieldObj.value;
+                                       }
+                                    } catch (e) { }
+                                 }
+                              }
+                              trackVisitor5924956000067228001();
+                              if (!validateEmail5924956000067228001()) { return false; }
+
+                              var urlparams = new URLSearchParams(window.location.search);
+                              if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                                 var webform = document.getElementById('webform5924956000067228001');
+                                 var service = urlparams.get('service');
+                                 var smarturlfield = document.createElement('input');
+                                 smarturlfield.setAttribute('type', 'hidden');
+                                 smarturlfield.setAttribute('value', service);
+                                 smarturlfield.setAttribute('name', 'service');
+                                 webform.appendChild(smarturlfield);
+                              }
+
+                              document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                           }
+
+                           function tooltipShow5924956000067228001(el) {
+                              var tooltip = el.nextElementSibling;
+                              var tooltipDisplay = tooltip.style.display;
+                              if (tooltipDisplay == 'none') {
+                                 var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                                 for (i = 0; i < allTooltip.length; i++) {
+                                    allTooltip[i].style.display = 'none';
+                                 }
+                                 tooltip.style.display = 'block';
+                              } else {
+                                 tooltip.style.display = 'none';
+                              }
+                           }
+                        </script>
+                        <script type='text/javascript'
+                           id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: 'siq019a590bc8b8f40bb5cc5210579014e68229cf866fad1effcc1a908d5b16884c', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor5924956000067228001() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads5924956000067228001']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads5924956000067228001']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads5924956000067228001']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
+                        <!-- Do not remove this --- Analytics Tracking code starts -->
+                        <script id='wf_anal'
+                           src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=1fd3d743bdf935992e67866b4404f848e33b033a5773a1745679848ecab4b3c9bf8c221271fa7d61216171626463a7d7gidda2d5e6e48745a3c7804dec987144f36928a20996ce7616ec5bbb3a5029ca7d3gid9e2275090453f2aa748b8ed536e2a7e5e77b301037511951010d95b1e7b7673fgidc93296539b611ecfe6cff5471245125a6c1b2087cdf81347e86c8ae0cb4d09dc&tw=b1a0b46111edb0eaffeca261d158e5070da033dad72232d7dcfff9f7b9b6fb76'></script>
+                        <!-- Do not remove this --- Analytics Tracking code ends. -->
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/t2yU1Rv-5O8?si=qh0vv0S3e52F1UDa" title="Gain The Highest Small-Term Rental Benefits
+                  " frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+      </div>
+      <div class="main-block-row city text-center" data-aos="fade-up" id="location">
+         <div class="container">
+            <div class="col-md-9 m-auto">
+               <h2>Tranquil Location with Seamless Access to the City</h2>
+               <p>Located in Shankarpalli, Hyderabad, Ridhira Zen is surrounded by lush landscapes, strategic
+                  connectivity, and growing
+                  infrastructure, making it an ideal investment hotspot. Situated in Hyderabad’s swiftly developing
+                  western corridor, it offers easy
+                  access to the Regional Ring Road (RRR), making commuting to key areas quick and convenient. This
+                  location promises a perfect
+                  blend of tranquility and connectivity, ideal for those seeking a peaceful yet accessible lifestyle.
+               </p>
+            </div>
+            <h4>Here’s why Shankarpally is the place to invest in 2025:</h4>
+            <div class="pic">
+               <img class="img-responsive m-hide" src="images/city-pic.jpg">
+               <img class="img-responsive m-visible" src="images/city-pic-m.jpg">
+            </div>
+         </div>
+      </div>
+      <div class="main-block-row amenities" data-aos="fade-up" id="resort">
+         <div class="container">
+            <div class="col-md-6">
+               <h2>Amenities</h2>
+            </div>
+            <div class="col-md-6">
+               <p>The resort at Ridhira Zen is more than just a luxury retreat—it’s a
+                  meticulously crafted sanctuary designed to cater your wellness. Managed
+                  by a 5-star hospitality brand, the resort offers world-class amenities and
+                  personalized experiences that cater to both relaxation and rejuvenation.
+               </p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="list">
+               <ul>
+                  <li><img src="images/amen-icon1.png"><span>Wellness Center & Spa</span></li>
+                  <li><img src="images/amen-icon2.png"><span>5-Star Resort Management</span></li>
+                  <li><img src="images/amen-icon3.png"><span>Private Pools & Premium Villas</span></li>
+                  <li><img src="images/amen-icon4.png"><span>Concierge & 24/7 Security</span></li>
+                  <li><img src="images/amen-icon5.png"><span>Yoga & Meditation Programs</span></li>
+                  <li><img src="images/amen-icon6.png"><span>Multiple Swimming Pools</span></li>
+                  <li><img src="images/amen-icon7.png"><span>Banquet Hall</span></li>
+                  <li><img src="images/amen-icon8.png"><span>Aroma Garden</span></li>
+                  <li><img src="images/amen-icon9.png"><span>Well & Fully Equipped Gym</span></li>
+                  <li><img src="images/amen-icon10.png"><span>Reflexology Park</span></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="main-block-row  explore" data-aos="fade-up" id="villas">
+         <div class="container">
+            <div class="col-md-4">
+               <h2>Explore <br>
+                  Our Premium <br>
+                  Villas - from 1.2 Crs
+               </h2>
+               <p>1 | 2 | 3 | 4 | BHK Fully Furnished
+                  Serviced Villas with 5X Returns
+               </p>
+               <p>From cozy 1-bedroom retreats to
+                  expansive 4-bedroom luxury villas—
+                  tailored to suit families, professionals,
+                  and investors alike.
+               </p>
+            </div>
+            <div class="col-md-8">
+               <div id="villas-slider" class="owl-carousel">
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/villa-pic1.jpg">
+                        <div class="text">
+                           <h3>1 BHK Villa</h3>
+                           <ul>
+                              <li>600 Sq. Ft.</li>
+                              <li>Bali-Themed Villas</li>
+                              <li>Fully Furnished</li>
+                              <li>Private Swimming Pool</li>
+                              <li>Maintained By 5-Star Resort</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/villa-pic2.jpg">
+                        <div class="text">
+                           <h3>2 BHK Villa</h3>
+                           <ul>
+                              <li>900 Sq. Ft.</li>
+                              <li>Bali-Themed Villas</li>
+                              <li>Fully Furnished</li>
+                              <li>Private Swimming Pool</li>
+                              <li>Maintained By 5-Star Resort</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/villa-pic3.jpg">
+                        <div class="text">
+                           <h3>3 BHK Villa</h3>
+                           <ul>
+                              <li>2460 Sq. Ft.</li>
+                              <li>Bali-Themed Villas</li>
+                              <li>Fully Furnished</li>
+                              <li>Private Swimming Pool</li>
+                              <li>Maintained By 5-Star Resort</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/villa-pic3.jpg">
+                        <div class="text">
+                           <h3>4 BHK Villa</h3>
+                           <ul>
+                              <li>3000 Sq. Ft.</li>
+                              <li>Bali-Themed Villas</li>
+                              <li>Fully Furnished</li>
+                              <li>Private Swimming Pool</li>
+                              <li>Maintained By 5-Star Resort</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-block-row  explore plots" data-aos="fade-up" id="plots">
+         <div class="container">
+            <div class="col-md-4">
+               <h2>Explore<br>
+                  Our Premium<br>
+                  Plots - from 65 Lakhs
+               </h2>
+               <p>Explore Premium Villa Plots in<br>
+                  Hyderabad
+               </p>
+            </div>
+            <div class="col-md-8">
+               <div id="plots-slider" class="owl-carousel">
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/plots-pic1.jpg">
+                        <div class="text">
+                           <h3>240 sq.yds</h3>
+                           <ul>
+                              <li>Highest Price Appreciation</li>
+                              <li>Access to 5-Star Resort</li>
+                              <li>Outdoor Amenities</li>
+                              <li>Access to Global Wellness Center</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/plots-pic2.jpg">
+                        <div class="text">
+                           <h3>330 sq.yds</h3>
+                           <ul>
+                              <li>Highest Price Appreciation</li>
+                              <li>Access to 5-Star Resort</li>
+                              <li>Outdoor Amenities</li>
+                              <li>Access to Global Wellness Center</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="bg">
+                        <img src="images/plots-pic3.jpg">
+                        <div class="text">
+                           <h3>480 sq.yds</h3>
+                           <ul>
+                              <li>Highest Price Appreciation</li>
+                              <li>Access to 5-Star Resort</li>
+                              <li>Outdoor Amenities</li>
+                              <li>Access to Global Wellness Center</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-block-row  explore community" data-aos="fade-up">
+         <div class="container">
+            <div class="col-md-12">
+               <h2>What Our Community<br>
+                  Love About Ridhira Zen
+               </h2>
+            </div>
+            <div class="col-md-12">
+               <div class="community-slider">
+                  <div class="col-md-4">
+                     <div class="bg"><iframe width="100%" height="315"
+                           src="https://www.youtube.com/embed/VrGcFgyJzU4?si=vmSjEiIym02UgPAm" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="bg"><iframe width="100%" height="315"
+                           src="https://www.youtube.com/embed/jOUn_xjIBr0?si=b01mEPRew6ca_syX" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="bg"><iframe width="100%" height="315"
+                           src="https://www.youtube.com/embed/0YtmIQp9Y8M?si=CRwsdtjJn_FQQ03l" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-block-row gallery text-center" data-aos="fade-up">
+         <div class="container">
+            <h2>Gallery</h2>
+            <p>Explore stunning images of the property, showcasing the serene villas, lush landscapes, and world-class
+               amenities.</p>
+            <div class="list">
+               <img class="img-responsive m-hide" src="images/gallery.jpg">
+               <img class="img-responsive m-visible" src="images/gallery-m.jpg">
+            </div>
+         </div>
+      </div>
+
+
+      <div class="main-block-row video bottom" data-aos="fade-up" id="form">
+         <div class="container">
+            <div class="col-md-8 m-auto form">
+               <h2>Get in touch with us</h2>
+               <div class="form-code">
+                  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
+                     style='background-color: white;color: black;max-width: 600px;'>
+                     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                     <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+                     <form id='webform5924956000067228001' action='https://crm.zoho.com/crm/WebToLeadForm'
+                        name=WebToLeads5924956000067228001 method='POST'
+                        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5924956000067228001()'
+                        accept-charset='UTF-8'>
+                        <input type='text' style='display:none;' name='xnQsjsdp'
+                           value='b8cc9d1fc459e2ab20bc26575d3aa6dc4f1c54ebfbd9334d14953a5fa5be6eee'></input>
+                        <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                        <input type='text' style='display:none;' name='xmIwtLD'
+                           value='9e5d0f12cbd4746f44c34fa7762f861c800a6202f61f29b61933b261ca54ed705a14089067666d05f69222a5f2428e96'></input>
+                        <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                        <input type='text' style='display:none;' name='returnURL'
+                           value='https&#x3a;&#x2f;&#x2f;ridhirazen.com&#x2f;campaigns&#x2f;resort-plots-and-villas-in-shankarpally&#x2f;thank-you'>
+                        </input>
+                        <!-- Do not remove this code. -->
+                        <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+                        <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Last_Name'>Name<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='text' id='Last_Name' aria-required='true' aria-label='Last Name'
+                                 name='Last Name' aria-valuemax='80' maxlength='80' required></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Phone'>Phone<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='text' id='Phone' aria-required='true' aria-label='Phone' name='Phone'
+                                 aria-valuemax='30' pattern=".{10,15}" minlength="5" required></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Email'>Email<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='email' ftype='email' autocomplete='false' id='Email' aria-required='true'
+                                 aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxlength='100'
+                                 required></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF6'>Product<span style='color:red;'>*</span></label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF6' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='true' aria-label='LEADCF6' name='LEADCF6' required>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='Villa'>Villa</option>
+                                 <option value='Plot'>Plot</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF7'>Profession</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF7' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='false' aria-label='LEADCF7' name='LEADCF7'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='Business'>Business</option>
+                                 <option value='Job'>Job</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Lead_Source'>Lead Source</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='Lead_Source'
+                                 onChange='addAriaSelected5924956000067228001()' aria-required='false'
+                                 aria-label='Lead Source' name='Lead Source'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='CC'>CC</option>
+                                 <option value='channel_partner'>channel_partner</option>
+                                 <option value='database'>database</option>
+                                 <option value='email_campaign'>email_campaign</option>
+                                 <option value='externalevents'>externalevents</option>
+                                 <option value='hospital'>hospital</option>
+                                 <option value='incoming'>incoming</option>
+                                 <option value='Investor&#x20;Data&#x20;-&#x20;Subham'>Investor Data - Subham</option>
+                                 <option value='IVR'>IVR</option>
+                                 <option value='kiosk'>kiosk</option>
+                                 <option value='odespa'>odespa</option>
+                                 <option value='Odespa&#x20;Database'>Odespa Database</option>
+                                 <option value='offline_advertising'>offline_advertising</option>
+                                 <option selected value='online_advertising'>online_advertising</option>
+                                 <option value='property_portals'>property_portals</option>
+                                 <option value='referral'>referral</option>
+                                 <option value='remarketing'>remarketing</option>
+                                 <option value='retreat'>retreat</option>
+                                 <option value='sms_campaign'>sms_campaign</option>
+                                 <option value='social_media'>social_media</option>
+                                 <option value='walkin'>walkin</option>
+                                 <option value='website'>website</option>
+                                 <option value='WebSite&#x20;Visit'>WebSite Visit</option>
+                                 <option value='whatsapp'>whatsapp</option>
+                                 <option value='WhatsApp&#x20;-&#x20;Ridhira&#x20;Living'>WhatsApp - Ridhira Living
+                                 </option>
+                                 <option value='whatsapp_campaign'>whatsapp_campaign</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF5'>subsource</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF5' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='false' aria-label='LEADCF5' name='LEADCF5'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='7&#x20;Hills&#x20;Powered&#x20;Welfare&#x20;Society'>7 Hills Powered
+                                    Welfare Society</option>
+                                 <option value='99acres'>99acres</option>
+                                 <option value='Adil&#x20;Reference'>Adil Reference</option>
+                                 <option value='Adonmo'>Adonmo</option>
+                                 <option value='Ahmadabad&#x20;-&#x20;Novotel'>Ahmadabad - Novotel</option>
+                                 <option value='Ahmedabad&#x20;-&#x20;Club&#x20;O7'>Ahmedabad - Club O7</option>
+                                 <option value='Ahmedabad&#x20;-&#x20;DoubleTree&#x20;by&#x20;Hilton'>Ahmedabad -
+                                    DoubleTree by Hilton</option>
+                                 <option value='Ahmedabad&#x20;-&#x20;Marriot'>Ahmedabad - Marriot</option>
+                                 <option value='AIG'>AIG</option>
+                                 <option value='Aparna&#x20;Cyber&#x20;Zone'>Aparna Cyber Zone</option>
+                                 <option value='Aparna&#x20;Hill&#x20;Park&#x20;Avenue'>Aparna Hill Park Avenue</option>
+                                 <option value='Aparna&#x20;Sarovar&#x20;Grande'>Aparna Sarovar Grande</option>
+                                 <option value='ASHOK&#x20;RAJU&#x20;SIR'>ASHOK RAJU SIR</option>
+                                 <option value='Bangalore&#x20;-&#x20;Adarsh&#x20;Nagar'>Bangalore - Adarsh Nagar
+                                 </option>
+                                 <option value='Bangalore&#x20;-&#x20;Radisson&#x20;Blu&#x20;Atria'>Bangalore - Radisson
+                                    Blu Atria</option>
+                                 <option value='Bangalore&#x20;Banashankari'>Bangalore Banashankari</option>
+                                 <option value='Bangalore&#x20;La&#x20;Marvella&#x20;hotel'>Bangalore La Marvella hotel
+                                 </option>
+                                 <option value='Banglalore&#x20;-&#x20;Jayanagar'>Banglalore - Jayanagar</option>
+                                 <option value='Builders&#x20;Lead'>Builders Lead</option>
+                                 <option value='chandan'>chandan</option>
+                                 <option value='channel_partner'>channel_partner</option>
+                                 <option value='chatbot'>chatbot</option>
+                                 <option value='Chennai&#x20;-&#x20;Courtyard&#x20;Marriot'>Chennai - Courtyard Marriot
+                                 </option>
+                                 <option value='Chennai&#x20;-&#x20;Forum&#x20;Vijaya&#x20;Mall'>Chennai - Forum Vijaya
+                                    Mall</option>
+                                 <option value='Chennai&#x20;Express&#x20;Avenue'>Chennai Express Avenue</option>
+                                 <option value='Cochin&#x20;Domestic&#x20;Airport'>Cochin Domestic Airport</option>
+                                 <option value='Cochin&#x20;Int&#x20;Airport'>Cochin Int Airport</option>
+                                 <option value='customer'>customer</option>
+                                 <option value='customer&#x20;anoop&#x20;khandelia'>customer anoop khandelia</option>
+                                 <option value='customer_referral'>customer_referral</option>
+                                 <option value='Delhi&#x20;Airport&#x20;-&#x20;Lemon&#x20;Tree&#x20;Premium'>Delhi
+                                    Airport - Lemon Tree Premium</option>
+                                 <option value='Direct&#x20;Site&#x20;Visit'>Direct Site Visit</option>
+                                 <option value='Dr&#x20;Shashank'>Dr Shashank</option>
+                                 <option value='facebook'>facebook</option>
+                                 <option value='facebook_ads'>facebook_ads</option>
+                                 <option value='FB&#x20;Event&#x20;Ad'>FB Event Ad</option>
+                                 <option value='Gold&#x20;Offer'>Gold Offer</option>
+                                 <option value='google'>google</option>
+                                 <option selected value='google_ads'>google_ads</option>
+                                 <option value='gvk'>gvk</option>
+                                 <option value='Hitec-city&#x20;Event&#x20;Dec&#x20;21&#x20;2024'>Hitec-city Event Dec
+                                    21 2024</option>
+                                 <option value='Hitech&#x20;Expo&#x20;Nov'>Hitech Expo Nov</option>
+                                 <option value='home&#x20;hunt'>home hunt</option>
+                                 <option value='Hotel&#x20;Royal&#x20;Orchid'>Hotel Royal Orchid</option>
+                                 <option value='housing'>housing</option>
+                                 <option value='Hyd&#x20;-&#x20;GVK&#x20;One&#x20;Mall'>Hyd - GVK One Mall</option>
+                                 <option value='Hyd&#x20;-&#x20;Hyderabad&#x20;Grand&#x20;Hotel'>Hyd - Hyderabad Grand
+                                    Hotel</option>
+                                 <option value='Hyd&#x20;-&#x20;Jubilee&#x20;Hills'>Hyd - Jubilee Hills</option>
+                                 <option value='Hyd&#x20;-&#x20;Novotel&#x20;HICC'>Hyd - Novotel HICC</option>
+                                 <option value='Hyd&#x20;-&#x20;Ramada&#x20;Manohar'>Hyd - Ramada Manohar</option>
+                                 <option value='Hyd&#x20;-&#x20;RGIA'>Hyd - RGIA</option>
+                                 <option value='Hyd&#x20;-&#x20;Svm&#x20;Grand&#x20;Nagole'>Hyd - Svm Grand Nagole
+                                 </option>
+                                 <option value='Hyd&#x20;-&#x20;Taj&#x20;Vivanta'>Hyd - Taj Vivanta</option>
+                                 <option value='Hyd-Radisson'>Hyd-Radisson</option>
+                                 <option value='Instagram'>Instagram</option>
+                                 <option value='Jaipur&#x20;Airport'>Jaipur Airport</option>
+                                 <option value='Jan2022'>Jan2022</option>
+                                 <option value='Karimnagar&#x20;event&#x20;30&#x20;Nov&#x20;2024'>Karimnagar event 30
+                                    Nov 2024</option>
+                                 <option value='Karthik&#x20;Bezawada'>Karthik Bezawada</option>
+                                 <option value='Kodaikanal&#x20;le&#x20;poshe'>Kodaikanal le poshe</option>
+                                 <option value='LinkedIn'>LinkedIn</option>
+                                 <option value='Lucknow&#x20;Airport'>Lucknow Airport</option>
+                                 <option value='Lucknow&#x20;Domestic&#x20;Airport'>Lucknow Domestic Airport</option>
+                                 <option value='magicbricks'>magicbricks</option>
+                                 <option value='Meydan&#x20;Expo'>Meydan Expo</option>
+                                 <option value='missed'>missed</option>
+                                 <option value='Mohan'>Mohan</option>
+                                 <option value='Mumbai&#x20;-&#x20;Courtyard&#x20;Marriott'>Mumbai - Courtyard Marriott
+                                 </option>
+                                 <option value='Mumbai&#x20;-&#x20;International&#x20;airport'>Mumbai - International
+                                    airport</option>
+                                 <option value='Mumbai&#x20;Lemon&#x20;Tree'>Mumbai Lemon Tree</option>
+                                 <option value='Mumbai&#x20;Niranta&#x20;hotel'>Mumbai Niranta hotel</option>
+                                 <option value='My&#x20;Home&#x20;Jewel'>My Home Jewel</option>
+                                 <option value='My&#x20;Home&#x20;Mangala'>My Home Mangala</option>
+                                 <option value='My&#x20;Home&#x20;Tarkshya&#x20;Dec&#x20;14&#x20;2024'>My Home Tarkshya
+                                    Dec 14 2024</option>
+                                 <option value='My&#x20;home&#x20;Vihanga'>My home Vihanga</option>
+                                 <option value='NCC&#x20;Cyber&#x20;Urbania'>NCC Cyber Urbania</option>
+                                 <option value='newspaper'>newspaper</option>
+                                 <option value='odespa'>odespa</option>
+                                 <option value='Odespa&#x20;Data'>Odespa Data</option>
+                                 <option value='organic'>organic</option>
+                                 <option value='Ragul&#x20;Reference'>Ragul Reference</option>
+                                 <option value='Rainbow&#x20;Vistas'>Rainbow Vistas</option>
+                                 <option value='Rajahmundry&#x20;Manjeera&#x20;Sarovar'>Rajahmundry Manjeera Sarovar
+                                 </option>
+                                 <option value='Rajapushpa&#x20;Regalia'>Rajapushpa Regalia</option>
+                                 <option value='Remax'>Remax</option>
+                                 <option value='Ritesh&#x20;Sir'>Ritesh Sir</option>
+                                 <option value='Sakshi&#x20;Property&#x20;Show'>Sakshi Property Show</option>
+                                 <option value='Sarath&#x20;City&#x20;Mall'>Sarath City Mall</option>
+                                 <option value='Siddharth&#x20;Gautham'>Siddharth Gautham</option>
+                                 <option value='Smart&#x20;Works&#x20;2&#x20;Nov&#x20;23'>Smart Works 2 Nov 23</option>
+                                 <option value='Srivalli&#x20;Madam'>Srivalli Madam</option>
+                                 <option value='StarConnect'>StarConnect</option>
+                                 <option value='Subham&#x20;Reference'>Subham Reference</option>
+                                 <option value='Times&#x20;Home&#x20;Hunt&#x20;June&#x20;2024'>Times Home Hunt June 2024
+                                 </option>
+                                 <option value='Times&#x20;invest'>Times invest</option>
+                                 <option value='times_expo_prop_sept_2023'>times_expo_prop_sept_2023</option>
+                                 <option value='TimesOnline'>TimesOnline</option>
+                                 <option value='TOI&#x20;June&#x20;2023'>TOI June 2023</option>
+                                 <option value='Trial&#x20;Database'>Trial Database</option>
+                                 <option value='TV9&#x20;Event'>TV9 Event</option>
+                                 <option value='TV9&#x20;Event-&#x20;April&#x20;2023'>TV9 Event- April 2023</option>
+                                 <option value='twitter'>twitter</option>
+                                 <option value='Udaipur&#x20;-&#x20;Lemon&#x20;Tree'>Udaipur - Lemon Tree</option>
+                                 <option value='Vikram&#x20;Reference'>Vikram Reference</option>
+                                 <option value='website'>website</option>
+                                 <option value='whatsapp'>whatsapp</option>
+                                 <option value='YASHODA'>YASHODA</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF15'>Adset Name</label></div>
+                           <div class='zcwf_col_fld'>
+                              <input type='text' id='LEADCF15' aria-required='false' aria-label='LEADCF15'
+                                 name='LEADCF15' aria-valuemax='255' maxlength='255' value='PMax'></input>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='LEADCF36'>Agency</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='LEADCF36' onChange='addAriaSelected5924956000067228001()'
+                                 aria-required='false' aria-label='LEADCF36' name='LEADCF36'>
+                                 <option value='-None-'>-None-</option>
+                                 <option value='8views'>8views</option>
+                                 <option value='Realatte'>Realatte</option>
+                                 <option value='Digital&#x20;Mojo'>Digital Mojo</option>
+                                 <option value='Inhouse&#x20;Marketing'>Inhouse Marketing</option>
+                                 <option selected value='Arin&#x20;Human'>Arin Human</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row wfrm_fld_dpNn'>
+                           <div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label
+                                 for='Lead_Status'>Lead Status</label></div>
+                           <div class='zcwf_col_fld'>
+                              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                                 aria-haspopup='listbox' id='Lead_Status'
+                                 onChange='addAriaSelected5924956000067228001()' aria-required='false'
+                                 aria-label='Lead Status' name='Lead Status'>
+                                 <option value='-None-'>-None-</option>
+                                 <option selected value='New&#x20;Lead'>New Lead</option>
+                                 <option value='Attempting&#x20;to&#x20;Contact'>Attempting to Contact</option>
+                                 <option value='Called'>Called</option>
+                                 <option value='Responded'>Responded</option>
+                                 <option value='Contact&#x20;in&#x20;Future'>Contact in Future</option>
+                                 <option value='Greetings'>Greetings</option>
+                                 <option value='Interested'>Interested</option>
+                                 <option value='Prospect'>Prospect</option>
+                                 <option value='Home&#x20;&#x2f;&#x20;Office&#x20;Visit'>Home &#x2f; Office Visit
+                                 </option>
+                                 <option value='Site&#x20;Visit'>Site Visit</option>
+                                 <option value='Won'>Won</option>
+                                 <option value='Booking&#x20;Done'>Booking Done</option>
+                                 <option value='Qualified'>Qualified</option>
+                                 <option value='Not&#x20;Interested'>Not Interested</option>
+                                 <option value='Lost'>Lost</option>
+                                 <option value='Junk&#x20;Lead'>Junk Lead</option>
+                                 <option value='Not&#x20;Qualified'>Not Qualified</option>
+                              </select>
+                              <div class='zcwf_col_help'></div>
+                           </div>
+                        </div>
+                        <div class='zcwf_row'>
+                           <div class='zcwf_col_lab'></div>
+                           <div class='zcwf_col_fld'><input type='submit' id='formsubmit' role='button'
+                                 class='formsubmit zcwf_button' value='Submit' aria-label='Submit' title='Submit'><input
+                                 type='reset' class='zcwf_button' role='button' name='reset' value='Reset'
+                                 aria-label='Reset' title='Reset'></div>
+                        </div>
+                        <script>
+                           function addAriaSelected5924956000067228001() {
+                              var optionElem = event.target;
+                              var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+                              if (previousSelectedOption) {
+                                 previousSelectedOption.removeAttribute('aria-selected');
+                              }
+                              optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+                           }
+                           function validateEmail5924956000067228001() {
+                              var form = document.forms['WebToLeads5924956000067228001'];
+                              var emailFld = form.querySelectorAll('[ftype=email]');
+                              var i;
+                              for (i = 0; i < emailFld.length; i++) {
+                                 var emailVal = emailFld[i].value;
+                                 if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                                    var atpos = emailVal.indexOf('@');
+                                    var dotpos = emailVal.lastIndexOf('.');
+                                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                       alert('Please enter a valid email address. ');
+                                       emailFld[i].focus();
+                                       return false;
+                                    }
+                                 }
+                              }
+                              return true;
+                           }
+
+                           function checkMandatory5924956000067228001() {
+                              var mndFileds = new Array('Last Name', 'Email', 'Phone', 'LEADCF6');
+                              var fldLangVal = new Array('Name', 'Email', 'Phone', 'Product');
+                              for (i = 0; i < mndFileds.length; i++) {
+                                 var fieldObj = document.forms['WebToLeads5924956000067228001'][mndFileds[i]];
+                                 if (fieldObj) {
+                                    if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                                       if (fieldObj.type == 'file') {
+                                          alert('Please select a file to upload.');
+                                          fieldObj.focus();
+                                          return false;
+                                       }
+                                       alert(fldLangVal[i] + ' cannot be empty.');
+                                       fieldObj.focus();
+                                       return false;
+                                    } else if (fieldObj.nodeName == 'SELECT') {
+                                       if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                          alert(fldLangVal[i] + ' cannot be none.');
+                                          fieldObj.focus();
+                                          return false;
+                                       }
+                                    } else if (fieldObj.type == 'checkbox') {
+                                       if (fieldObj.checked == false) {
+                                          alert('Please accept  ' + fldLangVal[i]);
+                                          fieldObj.focus();
+                                          return false;
+                                       }
+                                    }
+                                    try {
+                                       if (fieldObj.name == 'Last Name') {
+                                          name = fieldObj.value;
+                                       }
+                                    } catch (e) { }
+                                 }
+                              }
+                              trackVisitor5924956000067228001();
+                              if (!validateEmail5924956000067228001()) { return false; }
+
+                              var urlparams = new URLSearchParams(window.location.search);
+                              if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                                 var webform = document.getElementById('webform5924956000067228001');
+                                 var service = urlparams.get('service');
+                                 var smarturlfield = document.createElement('input');
+                                 smarturlfield.setAttribute('type', 'hidden');
+                                 smarturlfield.setAttribute('value', service);
+                                 smarturlfield.setAttribute('name', 'service');
+                                 webform.appendChild(smarturlfield);
+                              }
+
+                              document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                           }
+
+                           function tooltipShow5924956000067228001(el) {
+                              var tooltip = el.nextElementSibling;
+                              var tooltipDisplay = tooltip.style.display;
+                              if (tooltipDisplay == 'none') {
+                                 var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                                 for (i = 0; i < allTooltip.length; i++) {
+                                    allTooltip[i].style.display = 'none';
+                                 }
+                                 tooltip.style.display = 'block';
+                              } else {
+                                 tooltip.style.display = 'none';
+                              }
+                           }
+                        </script>
+                        <script type='text/javascript'
+                           id='VisitorTracking'>var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: 'siq019a590bc8b8f40bb5cc5210579014e68229cf866fad1effcc1a908d5b16884c', values: {}, ready: function () { } }; var d = document; s = d.createElement('script'); s.type = 'text/javascript'; s.id = 'zsiqscript'; s.defer = true; s.src = 'https://salesiq.zoho.com/widget'; t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t); function trackVisitor5924956000067228001() { try { if ($zoho) { var LDTuvidObj = document.forms['WebToLeads5924956000067228001']['LDTuvid']; if (LDTuvidObj) { LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid(); } var firstnameObj = document.forms['WebToLeads5924956000067228001']['First Name']; if (firstnameObj) { name = firstnameObj.value + ' ' + name; } $zoho.salesiq.visitor.name(name); var emailObj = document.forms['WebToLeads5924956000067228001']['Email']; if (emailObj) { email = emailObj.value; $zoho.salesiq.visitor.email(email); } } } catch (e) { } }</script>
+                        <!-- Do not remove this --- Analytics Tracking code starts -->
+                        <script id='wf_anal'
+                           src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=1fd3d743bdf935992e67866b4404f848e33b033a5773a1745679848ecab4b3c9bf8c221271fa7d61216171626463a7d7gidda2d5e6e48745a3c7804dec987144f36928a20996ce7616ec5bbb3a5029ca7d3gid9e2275090453f2aa748b8ed536e2a7e5e77b301037511951010d95b1e7b7673fgidc93296539b611ecfe6cff5471245125a6c1b2087cdf81347e86c8ae0cb4d09dc&tw=b1a0b46111edb0eaffeca261d158e5070da033dad72232d7dcfff9f7b9b6fb76'></script>
+                        <!-- Do not remove this --- Analytics Tracking code ends. -->
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <div class="bottom">
+         <div class="container">
+            <p><span>RERA NO: P01100005298</span> <span class="line">|</span> Copyright &#169; 2025 Ridhira Zen. All
+               rights Reserved.</p>
+         </div>
+      </div>
+   </footer>
+   <script src="js/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 1000,
+      })
+      function getUTMParameters() {
+         const urlParams = new URLSearchParams(window.location.search);
+         return {
+            utm_source: urlParams.get('utm_source') || 'default',
+            utm_medium: urlParams.get('utm_medium') || 'default',
+            utm_campaign: urlParams.get('utm_campaign') || 'default',
+            utm_term: urlParams.get('utm_term') || 'default',
+            utm_content: urlParams.get('utm_content') || 'default',
+            utm_network: urlParams.get('utm_network') || 'default',
+            utm_device: urlParams.get('utm_device') || 'default',
+            utm_keyword: urlParams.get('utm_keyword') || 'default',
+         };
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+         const utmParams = getUTMParameters();
+
+         let a = document.getElementById('LEADCF23').value; // utm_source
+         console.log("element", a)
+         document.getElementById('LEADCF25').value = utmParams.utm_campaign; // utm_campaign
+         document.getElementById('LEADCF22').value = utmParams.utm_medium; // utm_medium
+         document.getElementById('LEADCF19').value = utmParams.utm_network; // utm_network
+         document.getElementById('LEADCF17').value = utmParams.utm_content; // utm_content
+         document.getElementById('LEADCF24').value = utmParams.utm_term; // utm_term
+         document.getElementById('LEADCF20').value = utmParams.utm_device; // utm_device
+         document.getElementById('LEADCF18').value = utmParams.utm_keyword; // utm_keyword
+      });
+   </script>
+</body>
+
+</html>

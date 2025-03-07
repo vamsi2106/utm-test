@@ -1,0 +1,103 @@
+@media only screen and (max-width: 991px) {
+
+	.logo{left: 30px; right: inherit;}
+	.logo img {
+    height: 80px;
+}
+
+.banner .text{ position:inherit; }
+
+
+.intro-text{ background:#fafafa; padding:35px 0; margin-bottom:0; }
+
+.main-block-row {
+    margin-top: 0; margin-bottom: 50px;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.explore{margin-top: 0;}
+h2{ font-size:34px; }
+
+.banner h1{ font-size:36px; }
+.banner h1 span{ font-size:26px; }
+
+.amenities li{ width:100%; }
+
+.explore .bg{ margin:0; }
+
+.owl-stage-outer{ padding-top:60px; }
+
+
+.explore .owl-nav {
+    top: 0;
+}
+
+.community h2{ padding-bottom:0; }
+
+footer{ margin-top:0; }
+
+.form-btn a{ padding:10px; }
+
+
+.m-hide{display: none !important;}
+
+.m-visible{display: block !important;}
+
+.banner .form-btn a{  margin-bottom: 25px;}
+
+
+.zcwf_lblLeft .zcwf_col_fld input[type=text], input[type=password], .zcwf_lblLeft .zcwf_col_fld textarea, .zcwf_lblLeft .zcwf_col_fld_slt{width: 100%}
+.m-text-center{ text-align:center;          margin-top: 25px !important;}
+
+    .form-code label {
+        margin-bottom: 0px;
+        display: inline-block;
+        float: left;
+        width: 100%;
+    }
+
+
+.navbar-inverse{position: absolute; width: 100%; top: 0; left: 0;}
+    .navbar-inverse .navbar-toggle {
+        background: #c38924 !important;
+        border-color: #c38924 !important;
+        margin: 25px;
+        margin-top: -15px;
+    }
+
+
+.navbar-inverse .navbar-collapse  {
+    background: #eee; padding-bottom: 15px; text-align: center; border-color:#c38924 !important;
+}
+
+
+.sticky-header{position: inherit;}
+
+
+.brochure{top: inherit; bottom: 0; left: 0; width: 100%; transform: rotate(0deg); text-align: center; box-shadow: 0 0 10px #999;}
+.brochure a{ padding: 10px; width:100%; font-size:18px; }
+
+nav a{ margin-left:0 !important; }
+
+.whatsapp-btn {
+    bottom: 14px; right: 10px; z-index: 9999;
+}
+
+.whatsapp-btn img {
+    height: 50px;
+}
+
+footer{padding-bottom: 76px;}
+footer span.line{ display:none; }
+footer span{display: block;}
+
+
+.banner p {background: none; padding: 0; color: #000; text-shadow: none;}
+
+.zcwf_lblLeft .zcwf_col_fld input[type=text], input[type=password], .zcwf_lblLeft .zcwf_col_fld textarea, input[type=email], input[type=number] {
+    width: 100%;
+}
+
+
+}
