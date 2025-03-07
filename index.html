@@ -589,7 +589,25 @@
         </div>
         <script>
 
+            function getUTMParameters() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return {
+                    utm_source: urlParams.get('utm_source') || 'default',
+                    utm_medium: urlParams.get('utm_medium') || 'default',
+                    utm_campaign: urlParams.get('utm_campaign') || 'default',
+                    utm_term: urlParams.get('utm_term') || 'default',
+                    utm_content: urlParams.get('utm_content') || 'default',
+                };
+            }
 
+            document.addEventListener('DOMContentLoaded', function () {
+                const utmParams = getUTMParameters();
+                document.getElementById('utm_source').value = utmParams.utm_source;
+                document.getElementById('utm_medium').value = utmParams.utm_medium;
+                document.getElementById('utm_campaign').value = utmParams.utm_campaign;
+                document.getElementById('utm_term').value = utmParams.utm_term;
+                document.getElementById('utm_content').value = utmParams.utm_content;
+            });
 
             function addAriaSelected5924956000067228001() {
                 var optionElem = event.target;
